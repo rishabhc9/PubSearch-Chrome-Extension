@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ORCID Publications</title>
+    <script src="popup.js"></script>
+    <style>
+      #submit-button {
+    --font-color: #323232;
+    --bg-color: #fff;
+    --main-color: #323232;
+    width: 80px;
+    height: 32px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+  }
+
+  #submit-button:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+  }
+
+
+  #save-button {
+    --font-color: #323232;
+    --bg-color: #fff;
+    --main-color: #323232;
+    width: 250px;
+    height: 32px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+  }
+
+  #save-button:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+  }
+
+  #orcid-input {
+  --input-focus: #2d8cf0;
+  --font-color: #323232;
+  --font-color-sub: #666;
+  --bg-color: #fff;
+  --main-color: #323232;
+  width: 350px;
+  height: 35px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--font-color);
+  padding: 5px 10px;
+  outline: none;
+}
+
+#orcid-input::placeholder {
+  color: var(--font-color-sub);
+  opacity: 0.8;
+}
+
+#orcid-input:focus {
+  border: 2px solid var(--input-focus);
+}
+
+#name-input {
+  --input-focus: #2d8cf0;
+  --font-color: #323232;
+  --font-color-sub: #666;
+  --bg-color: #fff;
+  --main-color: #323232;
+  width: 350px;
+  height: 35px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--font-color);
+  padding: 5px 10px;
+  outline: none;
+}
+
+#name-input::placeholder {
+  color: var(--font-color-sub);
+  opacity: 0.8;
+}
+
+#name-input:focus {
+  border: 2px solid var(--input-focus);
+}
+
+#result-textarea {
+  --input-focus: #2d8cf0; 
+  --font-color: #323232;
+  --font-color-sub: #666;
+  --bg-color: #fff;
+  --main-color: #323232;
+  width: 350px;
+  height: 200px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--font-color);
+  padding: 5px 10px;
+  outline: none;
+}
+
+  </style>
+  </head>
+  <body>
+    <input type="text" id="orcid-input" placeholder="Search By ORCID">
+    <br>
+    <br>
+    <input type="text" id="name-input" placeholder="Search By Name">
+    <br>
+    <br>
+    <button id="submit-button">Submit</button>
+    <br>
+    <br>
+    <textarea id="result-textarea" rows="10"></textarea>
+    <br>
+    <br>
+    <button id="save-button">Save as Text File</button>
+    <br>
+    <br>
+  </body>
+</html>
